@@ -17,18 +17,42 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-  
+    [self writePlist];
     // Do any additional setup after loading the view.
 }
 - (IBAction)clickBtn1:(id)sender {
   
-//    [self.btn2 setTitle:@"4" forState:UIControlStateNormal];
+    [self loadPlist];
 
 
 }
 - (IBAction)clickBtn2:(id)sender {
    
 }
++(NSString *)getFilePath{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *filePath = [documentsDirectory stringByAppendingPathComponent:@"pgtalkloginfo.plist"];
+    NSLog(@"filePath:::%@",filePath);
+    return filePath;
+}
+- (void)writePlist{
+    NSArray *dataArray = @[@"John", @"Mary", @"Tom"];
+    NSDictionary *dataDict = @{@"names": dataArray};
+    BOOL success = [dataDict writeToFile:[ViewController getFilePath] atomically:YES];
+    if (success) {
+        NSLog(@"Data saved successfully.");
+    } else {
+        NSLog(@"Error saving data.");
+    }
 
+
+    
+}
+- (void) loadPlist{
+    NSDictionary *loadedData = [NSDictionary dictionaryWithContentsOfFile:[ViewController getFilePath]];
+    NSArray *loadedArray = [loadedData objectForKey:@"names"];
+    NSLog(@"Loaded array: %@", loadedArray);
+}
 
 @end
