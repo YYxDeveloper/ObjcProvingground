@@ -11,7 +11,7 @@
 #import "Masonry.h"
 #define weakSelf(var)   __weak typeof(var) weakSelf = var
 
-//屏幕的宽高
+//pgtalk屏幕的宽高
 #define SIMScreenWidth                              [UIScreen mainScreen].bounds.size.width
 #define SIMScreenHeight                             [UIScreen mainScreen].bounds.size.height
 

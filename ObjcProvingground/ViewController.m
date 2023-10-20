@@ -19,14 +19,7 @@
     [super viewDidLoad];
     
     
-    UIView *view1 = [[UIView alloc] init];
-    view1.backgroundColor = [UIColor greenColor];
-    [self.view addSubview:view1];
-    
-    [view1 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.width.equalTo([[NSNumber alloc]initWithFloat:(SIMScreenWidth/2)]);
-        make.size.height.equalTo(@74);
-    }];
+   
     
     
 //    [self writePlist];
@@ -66,5 +59,14 @@
     NSArray *loadedArray = [loadedData objectForKey:@"names"];
     NSLog(@"Loaded array: %@", loadedArray);
 }
-
+-(void)tryMasonry{
+    UIView *view1 = [[UIView alloc] init];
+    view1.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:view1];
+    
+    [view1 makeConstraints:^(MASConstraintMaker *make) {
+        make.size.width.equalTo([[NSNumber alloc]initWithFloat:(SIMScreenWidth/2)]);
+        make.size.height.equalTo(@74);
+    }];
+}
 @end
