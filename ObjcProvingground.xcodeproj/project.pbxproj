@@ -68,6 +68,7 @@
 		D2176401288901F0004A399E /* ObjcProvinggroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjcProvinggroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2176405288901F0004A399E /* ObjcProvinggroundUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcProvinggroundUITests.m; sourceTree = "<group>"; };
 		D2176407288901F0004A399E /* ObjcProvinggroundUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcProvinggroundUITestsLaunchTests.m; sourceTree = "<group>"; };
+		D2C3AA132AE27B0500E3986A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +109,6 @@
 				2879B0929259C0AAA6D06990 /* Pods-ObjcProvinggroundTests.debug.xcconfig */,
 				32375A7D904F42B4600CDB77 /* Pods-ObjcProvinggroundTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -125,6 +125,7 @@
 		D21763D0288901EF004A399E = {
 			isa = PBXGroup;
 			children = (
+				D2C3AA132AE27B0500E3986A /* PrefixHeader.pch */,
 				D21763DB288901EF004A399E /* ObjcProvingground */,
 				D21763FA288901F0004A399E /* ObjcProvinggroundTests */,
 				D2176404288901F0004A399E /* ObjcProvinggroundUITests */,
@@ -519,6 +520,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = /Users/qw/YYx/ObjcProvingground/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
