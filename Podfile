@@ -6,6 +6,7 @@ target 'ObjcProvingground' do
   use_frameworks!
 
   # Pods for ObjcProvingground
+	pod 'Masonry'
 
   target 'ObjcProvinggroundTests' do
     inherit! :search_paths
