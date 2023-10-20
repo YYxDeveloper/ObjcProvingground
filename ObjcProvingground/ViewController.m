@@ -17,7 +17,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self writePlist];
+    
+    
+    UIView *view1 = [[UIView alloc] init];
+    view1.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:view1];
+    
+    [view1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.width.equalTo([[NSNumber alloc]initWithFloat:(SIMScreenWidth/2)]);
+        make.size.height.equalTo(@74);
+    }];
+    
+    
+//    [self writePlist];
     // Do any additional setup after loading the view.
 }
 - (IBAction)clickBtn1:(id)sender {
