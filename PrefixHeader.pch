@@ -7,7 +7,7 @@
 
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
-#define MAS_SHORTHAND
+//#define MAS_SHORTHAND
 #import "Masonry.h"
 #define weakSelf(var)   __weak typeof(var) weakSelf = var
 
