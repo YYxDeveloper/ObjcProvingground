@@ -20,6 +20,7 @@
 		D21763FC288901F0004A399E /* ObjcProvinggroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D21763FB288901F0004A399E /* ObjcProvinggroundTests.m */; };
 		D2176406288901F0004A399E /* ObjcProvinggroundUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2176405288901F0004A399E /* ObjcProvinggroundUITests.m */; };
 		D2176408288901F0004A399E /* ObjcProvinggroundUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2176407288901F0004A399E /* ObjcProvinggroundUITestsLaunchTests.m */; };
+		D2C3AA172AE6267C00E3986A /* LangPlaygroundVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C3AA162AE6267C00E3986A /* LangPlaygroundVC.m */; };
 		F656FF5E1A308E4E921E070F /* Pods_ObjcProvinggroundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2262BBF496DE758FC838D8D /* Pods_ObjcProvinggroundTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,8 @@
 		D2176405288901F0004A399E /* ObjcProvinggroundUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcProvinggroundUITests.m; sourceTree = "<group>"; };
 		D2176407288901F0004A399E /* ObjcProvinggroundUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcProvinggroundUITestsLaunchTests.m; sourceTree = "<group>"; };
 		D2C3AA132AE27B0500E3986A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D2C3AA152AE6267C00E3986A /* LangPlaygroundVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LangPlaygroundVC.h; sourceTree = "<group>"; };
+		D2C3AA162AE6267C00E3986A /* LangPlaygroundVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LangPlaygroundVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +157,7 @@
 				D21763E0288901EF004A399E /* SceneDelegate.m */,
 				D21763E2288901EF004A399E /* ViewController.h */,
 				D21763E3288901EF004A399E /* ViewController.m */,
+				D2C3AA142AE6258500E3986A /* PGTalk-14567 */,
 				D21763E5288901EF004A399E /* Main.storyboard */,
 				D21763EB288901F0004A399E /* Assets.xcassets */,
 				D21763ED288901F0004A399E /* LaunchScreen.storyboard */,
@@ -179,6 +183,15 @@
 				D2176407288901F0004A399E /* ObjcProvinggroundUITestsLaunchTests.m */,
 			);
 			path = ObjcProvinggroundUITests;
+			sourceTree = "<group>";
+		};
+		D2C3AA142AE6258500E3986A /* PGTalk-14567 */ = {
+			isa = PBXGroup;
+			children = (
+				D2C3AA152AE6267C00E3986A /* LangPlaygroundVC.h */,
+				D2C3AA162AE6267C00E3986A /* LangPlaygroundVC.m */,
+			);
+			path = "PGTalk-14567";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +435,7 @@
 				D21763F2288901F0004A399E /* main.m in Sources */,
 				D21763EA288901EF004A399E /* ObjcProvingground.xcdatamodeld in Sources */,
 				D21763E4288901EF004A399E /* ViewController.m in Sources */,
+				D2C3AA172AE6267C00E3986A /* LangPlaygroundVC.m in Sources */,
 				D21763DE288901EF004A399E /* AppDelegate.m in Sources */,
 				D21763E1288901EF004A399E /* SceneDelegate.m in Sources */,
 			);

@@ -11,10 +11,10 @@
 #import "Masonry.h"
 #define weakSelf(var)   __weak typeof(var) weakSelf = var
 
-//pgtalk屏幕的宽高
+//about pgtalk
 #define SIMScreenWidth                              [UIScreen mainScreen].bounds.size.width
 #define SIMScreenHeight                             [UIScreen mainScreen].bounds.size.height
-
+#define SIMLocalized(key)  [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults] objectForKey:@"appLanguage"]] ofType:@"lproj"]] localizedStringForKey:(key) value:nil table:@"SIMLocalizable"]
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
