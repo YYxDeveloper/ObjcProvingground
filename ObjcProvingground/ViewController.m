@@ -24,7 +24,7 @@
     // Do any additional setup after loading the view.
 }
 -(void)viewDidAppear:(BOOL)animated{
-    SIMSelectedLanguageViewController *viewControllerToPresent = [SIMSelectedLanguageViewController createSIMSelectedLanguageViewControllerWith:ForLocation];
+    SIMSelectedLanguageViewController *viewControllerToPresent = [[SIMSelectedLanguageViewController alloc] initWitchExhibition:ForLanguag];
     
     viewControllerToPresent.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:viewControllerToPresent animated:YES completion:nil];
