@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GqP-Jz-epJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -60,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="30" y="70"/>
         </scene>
-        <!--Lang PlaygroundVC-->
+        <!--Selected Language View Controller-->
         <scene sceneID="xVA-Fx-zXo">
             <objects>
-                <viewController id="GqP-Jz-epJ" customClass="LangPlaygroundVC" sceneMemberID="viewController">
+                <viewController id="GqP-Jz-epJ" customClass="SIMSelectedLanguageViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gay-o4-PFk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

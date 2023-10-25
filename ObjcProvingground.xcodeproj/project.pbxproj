@@ -20,6 +20,7 @@
 		D21763FC288901F0004A399E /* ObjcProvinggroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D21763FB288901F0004A399E /* ObjcProvinggroundTests.m */; };
 		D2176406288901F0004A399E /* ObjcProvinggroundUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2176405288901F0004A399E /* ObjcProvinggroundUITests.m */; };
 		D2176408288901F0004A399E /* ObjcProvinggroundUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2176407288901F0004A399E /* ObjcProvinggroundUITestsLaunchTests.m */; };
+		D27AC72B2AE8FB8A007644ED /* SIMSelectedLanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D27AC72A2AE8FB8A007644ED /* SIMSelectedLanguageViewController.m */; };
 		D2C3AA172AE6267C00E3986A /* LangPlaygroundVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C3AA162AE6267C00E3986A /* LangPlaygroundVC.m */; };
 		F656FF5E1A308E4E921E070F /* Pods_ObjcProvinggroundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2262BBF496DE758FC838D8D /* Pods_ObjcProvinggroundTests.framework */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,8 @@
 		D2176401288901F0004A399E /* ObjcProvinggroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjcProvinggroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2176405288901F0004A399E /* ObjcProvinggroundUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcProvinggroundUITests.m; sourceTree = "<group>"; };
 		D2176407288901F0004A399E /* ObjcProvinggroundUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcProvinggroundUITestsLaunchTests.m; sourceTree = "<group>"; };
+		D27AC7292AE8FB8A007644ED /* SIMSelectedLanguageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIMSelectedLanguageViewController.h; sourceTree = "<group>"; };
+		D27AC72A2AE8FB8A007644ED /* SIMSelectedLanguageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIMSelectedLanguageViewController.m; sourceTree = "<group>"; };
 		D2C3AA132AE27B0500E3986A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		D2C3AA152AE6267C00E3986A /* LangPlaygroundVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LangPlaygroundVC.h; sourceTree = "<group>"; };
 		D2C3AA162AE6267C00E3986A /* LangPlaygroundVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LangPlaygroundVC.m; sourceTree = "<group>"; };
@@ -190,6 +193,8 @@
 			children = (
 				D2C3AA152AE6267C00E3986A /* LangPlaygroundVC.h */,
 				D2C3AA162AE6267C00E3986A /* LangPlaygroundVC.m */,
+				D27AC7292AE8FB8A007644ED /* SIMSelectedLanguageViewController.h */,
+				D27AC72A2AE8FB8A007644ED /* SIMSelectedLanguageViewController.m */,
 			);
 			path = "PGTalk-14567";
 			sourceTree = "<group>";
@@ -435,6 +440,7 @@
 				D21763F2288901F0004A399E /* main.m in Sources */,
 				D21763EA288901EF004A399E /* ObjcProvingground.xcdatamodeld in Sources */,
 				D21763E4288901EF004A399E /* ViewController.m in Sources */,
+				D27AC72B2AE8FB8A007644ED /* SIMSelectedLanguageViewController.m in Sources */,
 				D2C3AA172AE6267C00E3986A /* LangPlaygroundVC.m in Sources */,
 				D21763DE288901EF004A399E /* AppDelegate.m in Sources */,
 				D21763E1288901EF004A399E /* SceneDelegate.m in Sources */,

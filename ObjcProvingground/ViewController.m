@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-
+#import "SIMSelectedLanguageViewController.h"
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *btn1;
 @property (weak, nonatomic) IBOutlet UIButton *btn2;
@@ -17,13 +17,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-   
+  
     
     
 //    [self writePlist];
     // Do any additional setup after loading the view.
+}
+-(void)viewDidAppear:(BOOL)animated{
+    SIMSelectedLanguageViewController *viewControllerToPresent = [SIMSelectedLanguageViewController createSIMSelectedLanguageViewControllerWith:ForLocation];
+    
+    viewControllerToPresent.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:viewControllerToPresent animated:YES completion:nil];
+
 }
 - (IBAction)clickBtn1:(id)sender {
   
