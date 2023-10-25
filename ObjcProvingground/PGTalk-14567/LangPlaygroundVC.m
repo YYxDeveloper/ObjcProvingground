@@ -10,8 +10,7 @@ typedef NS_ENUM(NSInteger, ExhibitionType) {
     ForLanguag,
     ForLocation,
 };
-typedef void (^CallbackBlock)(NSString *message);
-@interface LocationExhibitionVeiw:UIView
+@interface LocAndLangExhibitionVeiw:UIView
 @property (strong, nonatomic, nullable) UIImageView *witchFlag;
 @property (strong, nonatomic) UILabel *exhibitonLabel;
 @property (assign, nonatomic) ExhibitionType exhibitionType;
@@ -19,24 +18,22 @@ typedef void (^CallbackBlock)(NSString *message);
 +(instancetype)initWithForLanguagType;
 +(instancetype)initWithForLocationType;
 -(void)modfiyExhibitionText:(NSString *)conutryOrLangName;
--(void)tapExhibitionitem:(void (^)(ExhibitionType exhibitionType ))hasTapedExhibitionItem;
-- (void)performTaskWithCallback:(CallbackBlock)callback;
 @end
 
-@implementation LocationExhibitionVeiw
-+(LocationExhibitionVeiw*)initWithForLanguagType{
+@implementation LocAndLangExhibitionVeiw
++(LocAndLangExhibitionVeiw*)initWithForLanguagType{
     
-    LocationExhibitionVeiw* theExhibitionVeiw = [LocationExhibitionVeiw new];
+    LocAndLangExhibitionVeiw* theExhibitionVeiw = [LocAndLangExhibitionVeiw new];
     theExhibitionVeiw.exhibitionType = ForLanguag;
     theExhibitionVeiw.backgroundColor = [UIColor whiteColor];
     UILabel *witchLangLabel = [[UILabel alloc] init];
     theExhibitionVeiw.exhibitonLabel = witchLangLabel;
     //use userdefault appLanguage
-    [LocationExhibitionVeiw modifyFontWithLabel:witchLangLabel];
+    [LocAndLangExhibitionVeiw modifyFontWithLabel:witchLangLabel];
     
     [theExhibitionVeiw addSubview:witchLangLabel];
     
-    UIImageView *arrowImageView = [LocationExhibitionVeiw createArrowImageView];
+    UIImageView *arrowImageView = [LocAndLangExhibitionVeiw createArrowImageView];
     [theExhibitionVeiw addSubview:arrowImageView];
 
     [theExhibitionVeiw mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -58,7 +55,7 @@ typedef void (^CallbackBlock)(NSString *message);
 
 
 +(instancetype)initWithForLocationType{
-    LocationExhibitionVeiw* theExhibitionVeiw = [LocationExhibitionVeiw new];
+    LocAndLangExhibitionVeiw* theExhibitionVeiw = [LocAndLangExhibitionVeiw new];
     theExhibitionVeiw.exhibitionType = ForLocation;
     theExhibitionVeiw.backgroundColor = [UIColor whiteColor];
     
@@ -66,7 +63,7 @@ typedef void (^CallbackBlock)(NSString *message);
     theExhibitionVeiw.exhibitonLabel = exhibitonLabel;
 
     //use userdefault appLanguage
-    [LocationExhibitionVeiw modifyFontWithLabel:exhibitonLabel];
+    [LocAndLangExhibitionVeiw modifyFontWithLabel:exhibitonLabel];
     [theExhibitionVeiw addSubview:exhibitonLabel];
     
     UIImageView* witchFlagImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"Taiwan"]];
@@ -74,7 +71,7 @@ typedef void (^CallbackBlock)(NSString *message);
     witchFlagImageView.layer.masksToBounds = YES;
     [theExhibitionVeiw addSubview:witchFlagImageView];
     
-    UIImageView *arrowImageView = [LocationExhibitionVeiw createArrowImageView];
+    UIImageView *arrowImageView = [LocAndLangExhibitionVeiw createArrowImageView];
     [theExhibitionVeiw addSubview:arrowImageView];
     
     [theExhibitionVeiw mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -98,8 +95,6 @@ typedef void (^CallbackBlock)(NSString *message);
         make.trailing.equalTo(theExhibitionVeiw).mas_offset(-7);
     }];
     
-    UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapExhibitionitem)];
-    [theExhibitionVeiw addGestureRecognizer:tap];
     return theExhibitionVeiw;
 }
 +(void)modifyFontWithLabel:(UILabel*) theLabel{
@@ -137,7 +132,7 @@ typedef void (^CallbackBlock)(NSString *message);
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self insertLanguagePanelUIWithHeight:@76];
+//    [self insertLanguagePanelUIWithHeight:@76];
     
 }
 -(void)insertLanguagePanelUIWithHeight:(NSNumber*) height{
@@ -155,7 +150,7 @@ typedef void (^CallbackBlock)(NSString *message);
     [self insertPanelSelectViewUIInContainerView:containerView layoutHeight:@(38)];
 }
 -(void)insertPanelTitleUIInContainerView:(UIView*)container layoutHeight:(NSNumber*) height{
-    UIStackView *stack = [LocationExhibitionVeiw createStackView];
+    UIStackView *stack = [LocAndLangExhibitionVeiw createStackView];
     
     [container addSubview:stack];
     [stack mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -167,18 +162,18 @@ typedef void (^CallbackBlock)(NSString *message);
     
     UILabel *langTitle = [[UILabel alloc] init];
     langTitle.text = SIMLocalized(@"語言") ? SIMLocalized(@"語言") : @"Language";
-    [LocationExhibitionVeiw modifyFontWithLabel:langTitle];
+    [LocAndLangExhibitionVeiw modifyFontWithLabel:langTitle];
     [stack addArrangedSubview:langTitle];
     
     UILabel *locationTitle = [[UILabel alloc] init];
     locationTitle.text = SIMLocalized(@"地区") ?  SIMLocalized(@"地区") : @"Location";
-    [LocationExhibitionVeiw modifyFontWithLabel:locationTitle];
+    [LocAndLangExhibitionVeiw modifyFontWithLabel:locationTitle];
     [stack addArrangedSubview:locationTitle];
     
     
 }
 -(void)insertPanelSelectViewUIInContainerView:(UIView*)container layoutHeight:(NSNumber*) height{
-    UIStackView *stack = [LocationExhibitionVeiw createStackView];
+    UIStackView *stack = [LocAndLangExhibitionVeiw createStackView];
 
     [self.view addSubview:stack];
 
@@ -192,29 +187,34 @@ typedef void (^CallbackBlock)(NSString *message);
         
     }];
 
-    LocationExhibitionVeiw *witchLangView = [LocationExhibitionVeiw initWithForLanguagType];
-    [witchLangView modfiyExhibitionText:SIMLocalized(@"語言") ? SIMLocalized(@"語言") : @"繁體中文"];
-    [self addTapGesture:ForLanguag toExhibitionVeiw:witchLangView];
+    LocAndLangExhibitionVeiw *witchLangView = [LocAndLangExhibitionVeiw initWithForLanguagType];
+    [self settingExhibitionVeiw:ForLanguag toExhibitionVeiw:witchLangView];
   
    
     [stack addArrangedSubview:witchLangView];
 
-    LocationExhibitionVeiw *witchLocationView = [LocationExhibitionVeiw initWithForLocationType];
-    [self addTapGesture:ForLocation toExhibitionVeiw:witchLocationView];
+    LocAndLangExhibitionVeiw *witchLocationView = [LocAndLangExhibitionVeiw initWithForLocationType];
+    [self settingExhibitionVeiw:ForLocation toExhibitionVeiw:witchLocationView];
 
-    [witchLocationView modfiyExhibitionText:@"traditional chinese"];
     [stack addArrangedSubview:witchLocationView];
     
     
 }
--(void)addTapGesture:(ExhibitionType) type toExhibitionVeiw:(LocationExhibitionVeiw*) exhibitionVeiw{
+-(void)settingExhibitionVeiw:(ExhibitionType) type toExhibitionVeiw:(LocAndLangExhibitionVeiw*) exhibitionVeiw{
     if(type == ForLanguag){
+        [exhibitionVeiw modfiyExhibitionText:SIMLocalized(@"語言") ? SIMLocalized(@"語言") : @"繁體中文"];
+
         UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapLanguageExhibition)];
         [exhibitionVeiw addGestureRecognizer:tap];
+
     }else if (type == ForLocation){
+        [exhibitionVeiw modfiyExhibitionText:@"traditional chinese"];
+
         UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapLocationExhibition)];
         [exhibitionVeiw addGestureRecognizer:tap];
+
     }
+
 }
 -(void)tapLanguageExhibition{
     NSLog(@"cccc");
