@@ -13,7 +13,7 @@ typedef NS_ENUM(NSInteger, ExhibitionType) {
     ForLocation,
 };
 @interface SIMSelectedLanguageViewController : UIViewController
-+(SIMSelectedLanguageViewController*) createSIMSelectedLanguageViewControllerWith:(ExhibitionType)type;
+-(instancetype)initWitchExhibition:(ExhibitionType)type;
 
 @end
 

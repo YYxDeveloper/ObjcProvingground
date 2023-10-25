@@ -10,23 +10,39 @@
 @interface SIMSelectedLanguageViewController ()
 @property (strong, nonatomic) UIView* contentView;
 @property (nonatomic,strong) NSArray<NSString *> *countrys;
+@property (assign, nonatomic) ExhibitionType type;
+
 
 @end
 
 @implementation SIMSelectedLanguageViewController
-+(SIMSelectedLanguageViewController*) createSIMSelectedLanguageViewControllerWith:(ExhibitionType)type{
-    SIMSelectedLanguageViewController *vc = [SIMSelectedLanguageViewController new];
-    CGFloat colorValue = 153.0/255.0;
-    vc.view.backgroundColor = [UIColor colorWithRed:colorValue green:colorValue blue:colorValue alpha:0.5];
-    vc.countrys = @[@"Taiwan",@"China",@"English",@"Japan",@"Korea",@"Thailand",@"Vietnam"];
-    vc.contentView = [UIView new];
-    [vc.view addSubview:vc.contentView];
-    [vc sttingContentViewWithArrayCount:vc.countrys.count];
 
+-(instancetype)initWitchExhibition:(ExhibitionType)type {
+    self = [super init]; // 調用父類的初始化方法
+    if (self) {
+        switch (type) {
+            case ForLanguag:
+            self.countrys = @[@"Taiwan",@"China",@"English",@"Japan",@"Korea",@"Thailand",@"Vietnam"];
+               
+                break;
+     
+            case ForLocation:
+                self.countrys = @[@"Taiwan",@"Vietnam"];
+
+                break;
+        }
+        self.type = type;
+        self.contentView = [UIView new];
+    }
+    return self;
+}
+
+-(void)viewDidLoad{
+    CGFloat colorValue = 153.0/255.0;
+    self.view.backgroundColor = [UIColor colorWithRed:colorValue green:colorValue blue:colorValue alpha:0.5];
     
-    
-    
-    return vc;
+    [self.view addSubview:self.contentView];
+    [self sttingContentViewWithArrayCount:self.countrys.count];
 }
 - (NSDictionary*)getViewControllerInfo{
     
