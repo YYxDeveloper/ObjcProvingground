@@ -55,6 +55,8 @@
         [_switchToOtherLocationBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
         [_switchToOtherLocationBtn addTarget:self action:@selector(switchToOtherLocation) forControlEvents:UIControlEventTouchUpInside];
         [_switchToOtherLocationBtn setBackgroundColor:[UIColor redColor]];
+        [_switchToOtherLocationBtn.layer setCornerRadius:8];
+        
     }
     return _switchToOtherLocationBtn;
 }
@@ -65,6 +67,8 @@
         [_keepThisLocationBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
         [_keepThisLocationBtn addTarget:self action:@selector(closeThisView) forControlEvents:UIControlEventTouchUpInside];
         [_keepThisLocationBtn setBackgroundColor:[UIColor redColor]];
+        [_keepThisLocationBtn.layer setCornerRadius:8];
+
     }
     return _keepThisLocationBtn;
 }
