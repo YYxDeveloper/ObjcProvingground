@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import "SIMSelectedLanguageViewController.h"
+#import "SIMSwitchLocationContentViewController.h"
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *btn1;
 @property (weak, nonatomic) IBOutlet UIButton *btn2;
@@ -19,21 +20,17 @@
     [super viewDidLoad];
   
     
-    
 //    [self writePlist];
     // Do any additional setup after loading the view.
 }
 -(void)viewDidAppear:(BOOL)animated{
-    SIMSelectedLanguageViewController *viewControllerToPresent = [[SIMSelectedLanguageViewController alloc] initWitchExhibition:ForLanguag];
-    
-    viewControllerToPresent.modalPresentationStyle = UIModalPresentationFullScreen;
-    [self presentViewController:viewControllerToPresent animated:YES completion:nil];
+   
 
 }
 - (IBAction)clickBtn1:(id)sender {
   
-    [self loadPlist];
-
+//    [self loadPlist];
+    [self try14567View];
 
 }
 - (IBAction)clickBtn2:(id)sender {
@@ -73,5 +70,13 @@
         make.size.width.equalTo([[NSNumber alloc]initWithFloat:(SIMScreenWidth/2)]);
         make.size.height.equalTo(@74);
     }];
+}
+-(void)try14567View{
+    SIMSwitchLocationContentViewController* vc = [[SIMSwitchLocationContentViewController alloc] initWithComparingLocation:NotChange];
+    vc.modalPresentationStyle = UIModalPresentationFullScreen;
+
+//    [self.view addSubview:vc.view];
+    [self presentViewController:vc animated:NO completion:nil];
+
 }
 @end

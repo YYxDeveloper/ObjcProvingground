@@ -13,6 +13,9 @@ typedef NS_ENUM(NSInteger, ExhibitionType) {
     ForLocation,
 };
 @interface SIMSelectedLanguageViewController : UIViewController
+@property (strong, nonatomic) UIButton* btnConfirm;
+@property (strong, nonatomic) UIButton* btnBack;
+
 -(instancetype)initWitchExhibition:(ExhibitionType)type;
 
 @end
