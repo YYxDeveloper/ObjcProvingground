@@ -73,6 +73,7 @@
 		D2176401288901F0004A399E /* ObjcProvinggroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjcProvinggroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2176405288901F0004A399E /* ObjcProvinggroundUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcProvinggroundUITests.m; sourceTree = "<group>"; };
 		D2176407288901F0004A399E /* ObjcProvinggroundUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcProvinggroundUITestsLaunchTests.m; sourceTree = "<group>"; };
+		D258B3682AFA272B00A52469 /* VNLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = VNLocation.gpx; sourceTree = "<group>"; };
 		D27AC7292AE8FB8A007644ED /* SIMSelectedLanguageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIMSelectedLanguageViewController.h; sourceTree = "<group>"; };
 		D27AC72A2AE8FB8A007644ED /* SIMSelectedLanguageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIMSelectedLanguageViewController.m; sourceTree = "<group>"; };
 		D2C3AA132AE27B0500E3986A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -170,6 +171,7 @@
 				D21763F0288901F0004A399E /* Info.plist */,
 				D21763F1288901F0004A399E /* main.m */,
 				D21763E8288901EF004A399E /* ObjcProvingground.xcdatamodeld */,
+				D258B3682AFA272B00A52469 /* VNLocation.gpx */,
 			);
 			path = ObjcProvingground;
 			sourceTree = "<group>";
