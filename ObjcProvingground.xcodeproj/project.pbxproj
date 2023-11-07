@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		52762FB395D1AFEE46437F7F /* Pods_ObjcProvingground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A52E5B872A0B8FF6504253 /* Pods_ObjcProvingground.framework */; };
 		8C16CD16EE5D08AFC7034E8B /* Pods_ObjcProvingground_ObjcProvinggroundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F8F7A829508E7682514C99 /* Pods_ObjcProvingground_ObjcProvinggroundUITests.framework */; };
+		D2034FB72AF3775B00B4444C /* SIMSwitchLocationContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2034FB62AF3775B00B4444C /* SIMSwitchLocationContentViewController.m */; };
 		D21763DE288901EF004A399E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D21763DD288901EF004A399E /* AppDelegate.m */; };
 		D21763E1288901EF004A399E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D21763E0288901EF004A399E /* SceneDelegate.m */; };
 		D21763E4288901EF004A399E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D21763E3288901EF004A399E /* ViewController.m */; };
@@ -20,6 +21,8 @@
 		D21763FC288901F0004A399E /* ObjcProvinggroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D21763FB288901F0004A399E /* ObjcProvinggroundTests.m */; };
 		D2176406288901F0004A399E /* ObjcProvinggroundUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2176405288901F0004A399E /* ObjcProvinggroundUITests.m */; };
 		D2176408288901F0004A399E /* ObjcProvinggroundUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2176407288901F0004A399E /* ObjcProvinggroundUITestsLaunchTests.m */; };
+		D27AC72B2AE8FB8A007644ED /* SIMSelectedLanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D27AC72A2AE8FB8A007644ED /* SIMSelectedLanguageViewController.m */; };
+		D2C3AA172AE6267C00E3986A /* LangPlaygroundVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C3AA162AE6267C00E3986A /* LangPlaygroundVC.m */; };
 		F656FF5E1A308E4E921E070F /* Pods_ObjcProvinggroundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2262BBF496DE758FC838D8D /* Pods_ObjcProvinggroundTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +53,8 @@
 		767431B0D452C3E4303C02BC /* Pods-ObjcProvingground-ObjcProvinggroundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcProvingground-ObjcProvinggroundUITests.release.xcconfig"; path = "Target Support Files/Pods-ObjcProvingground-ObjcProvinggroundUITests/Pods-ObjcProvingground-ObjcProvinggroundUITests.release.xcconfig"; sourceTree = "<group>"; };
 		90F8F7A829508E7682514C99 /* Pods_ObjcProvingground_ObjcProvinggroundUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjcProvingground_ObjcProvinggroundUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2262BBF496DE758FC838D8D /* Pods_ObjcProvinggroundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjcProvinggroundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2034FB52AF3775B00B4444C /* SIMSwitchLocationContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIMSwitchLocationContentViewController.h; sourceTree = "<group>"; };
+		D2034FB62AF3775B00B4444C /* SIMSwitchLocationContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIMSwitchLocationContentViewController.m; sourceTree = "<group>"; };
 		D21763D9288901EF004A399E /* ObjcProvingground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjcProvingground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21763DC288901EF004A399E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D21763DD288901EF004A399E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,7 +73,12 @@
 		D2176401288901F0004A399E /* ObjcProvinggroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjcProvinggroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2176405288901F0004A399E /* ObjcProvinggroundUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcProvinggroundUITests.m; sourceTree = "<group>"; };
 		D2176407288901F0004A399E /* ObjcProvinggroundUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcProvinggroundUITestsLaunchTests.m; sourceTree = "<group>"; };
+		D258B3682AFA272B00A52469 /* VNLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = VNLocation.gpx; sourceTree = "<group>"; };
+		D27AC7292AE8FB8A007644ED /* SIMSelectedLanguageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIMSelectedLanguageViewController.h; sourceTree = "<group>"; };
+		D27AC72A2AE8FB8A007644ED /* SIMSelectedLanguageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIMSelectedLanguageViewController.m; sourceTree = "<group>"; };
 		D2C3AA132AE27B0500E3986A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D2C3AA152AE6267C00E3986A /* LangPlaygroundVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LangPlaygroundVC.h; sourceTree = "<group>"; };
+		D2C3AA162AE6267C00E3986A /* LangPlaygroundVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LangPlaygroundVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,12 +164,14 @@
 				D21763E0288901EF004A399E /* SceneDelegate.m */,
 				D21763E2288901EF004A399E /* ViewController.h */,
 				D21763E3288901EF004A399E /* ViewController.m */,
+				D2C3AA142AE6258500E3986A /* PGTalk-14567 */,
 				D21763E5288901EF004A399E /* Main.storyboard */,
 				D21763EB288901F0004A399E /* Assets.xcassets */,
 				D21763ED288901F0004A399E /* LaunchScreen.storyboard */,
 				D21763F0288901F0004A399E /* Info.plist */,
 				D21763F1288901F0004A399E /* main.m */,
 				D21763E8288901EF004A399E /* ObjcProvingground.xcdatamodeld */,
+				D258B3682AFA272B00A52469 /* VNLocation.gpx */,
 			);
 			path = ObjcProvingground;
 			sourceTree = "<group>";
@@ -179,6 +191,19 @@
 				D2176407288901F0004A399E /* ObjcProvinggroundUITestsLaunchTests.m */,
 			);
 			path = ObjcProvinggroundUITests;
+			sourceTree = "<group>";
+		};
+		D2C3AA142AE6258500E3986A /* PGTalk-14567 */ = {
+			isa = PBXGroup;
+			children = (
+				D2C3AA152AE6267C00E3986A /* LangPlaygroundVC.h */,
+				D2C3AA162AE6267C00E3986A /* LangPlaygroundVC.m */,
+				D27AC7292AE8FB8A007644ED /* SIMSelectedLanguageViewController.h */,
+				D27AC72A2AE8FB8A007644ED /* SIMSelectedLanguageViewController.m */,
+				D2034FB52AF3775B00B4444C /* SIMSwitchLocationContentViewController.h */,
+				D2034FB62AF3775B00B4444C /* SIMSwitchLocationContentViewController.m */,
+			);
+			path = "PGTalk-14567";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +447,9 @@
 				D21763F2288901F0004A399E /* main.m in Sources */,
 				D21763EA288901EF004A399E /* ObjcProvingground.xcdatamodeld in Sources */,
 				D21763E4288901EF004A399E /* ViewController.m in Sources */,
+				D27AC72B2AE8FB8A007644ED /* SIMSelectedLanguageViewController.m in Sources */,
+				D2C3AA172AE6267C00E3986A /* LangPlaygroundVC.m in Sources */,
+				D2034FB72AF3775B00B4444C /* SIMSwitchLocationContentViewController.m in Sources */,
 				D21763DE288901EF004A399E /* AppDelegate.m in Sources */,
 				D21763E1288901EF004A399E /* SceneDelegate.m in Sources */,
 			);
