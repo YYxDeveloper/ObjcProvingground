@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GqP-Jz-epJ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -41,14 +41,25 @@
                                     <action selector="clickBtn2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iwk-du-8bd"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="模擬越南app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6H6-qM-n6m">
+                                <rect key="frame" x="100" y="148" width="214" height="614"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="NmZ-Zk-8Qd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7Yv-Ks-t2S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6H6-qM-n6m" secondAttribute="bottom" constant="100" id="NHh-8z-mGh"/>
+                            <constraint firstItem="6H6-qM-n6m" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="PEd-5k-le0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6H6-qM-n6m" secondAttribute="trailing" constant="100" id="YNL-V5-MXT"/>
                             <constraint firstItem="NmZ-Zk-8Qd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Zv8-hP-c1w"/>
                             <constraint firstItem="du0-0O-3Ar" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oTv-Kf-3zt"/>
                             <constraint firstItem="du0-0O-3Ar" firstAttribute="top" secondItem="NmZ-Zk-8Qd" secondAttribute="bottom" constant="10" id="wLz-bU-JG9"/>
+                            <constraint firstItem="6H6-qM-n6m" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ysj-EG-UY8"/>
+                            <constraint firstItem="6H6-qM-n6m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="z98-hq-Kfm"/>
                         </constraints>
                     </view>
                     <connections>
@@ -60,10 +71,10 @@
             </objects>
             <point key="canvasLocation" x="30" y="70"/>
         </scene>
-        <!--Switch Location Content View Controller-->
+        <!--Yx Transfer BankVC-->
         <scene sceneID="xVA-Fx-zXo">
             <objects>
-                <viewController id="GqP-Jz-epJ" customClass="SIMSwitchLocationContentViewController" sceneMemberID="viewController">
+                <viewController id="GqP-Jz-epJ" customClass="YYxTransferBankVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gay-o4-PFk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
