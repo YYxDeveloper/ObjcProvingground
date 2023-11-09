@@ -3897,6 +3897,10 @@ our E-Invoice by email or fill mobile barcode  to save it to your mobile carrier
 "PGP消費點數用途及購買方式跟退款方式：" = "PGP Usage of consumption points, purchase method and refund method :";
 "凡是購買PGP點數必礦任何合作關係商戶皆可使用！購買之PGP點數皆已交付『陽信銀行信託專戶』中予以承認擔保，如未使用完之點數，可參考隱私權及服務條例中第十一項條例，PGP返還方式規定予以申請退款。" = "Any purchase of PGP points must be used by any parter merchants! All purchased PGP points have been delivered『Sunny Bank Trust account』The guarantee is recognized. If the unused points are not used up, you can apply for a refund by referring to the 11th regulation in the Privacy and Services Regulations, the PGP return method stipulates.";
 "活動贈送的PT點數，僅限於消費抵扣使用，未使用之贈送點數，將無法兌換現金退款。" = "The PT points given by the event can only be used for consumption deduction. Unused gift points will not be exchanged for cash refunds.";
+"select_purchase_pgp_number" = "請選擇購買PGP數量";
+"pgp_balance_number" = "PGP餘額: ";
+"enter_purchase_pgp_number" = "請輸入數量";
+
 "刪除帳號" = "Delete Account";
 "刪除所有數據及資料" = "Delete all data and information";
 "確定刪除鴿子PGTalk帳號" = "Confirm Delete your PGTalk account";

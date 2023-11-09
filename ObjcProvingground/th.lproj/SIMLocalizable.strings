@@ -3650,3 +3650,7 @@
 // 2023-09-08新增
 "TouchId_Disabled" = "Touch ID disabled";
 "FaceID_Disabled" = "Face ID disabled";
+// 2023-11-09
+"select_purchase_pgp_number" = "請選擇購買PGP數量";
+"pgp_balance_number" = "PGP餘額: ";
+"enter_purchase_pgp_number" = "請輸入數量";
