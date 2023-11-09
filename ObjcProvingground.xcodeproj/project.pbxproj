@@ -136,6 +136,12 @@
 		D258B43D2AFB66C000A52469 /* ObjcProvingground-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = D258B43C2AFB658200A52469 /* ObjcProvingground-Bridging-Header.h */; };
 		D27AC72B2AE8FB8A007644ED /* SIMSelectedLanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D27AC72A2AE8FB8A007644ED /* SIMSelectedLanguageViewController.m */; };
 		D2C3AA172AE6267C00E3986A /* LangPlaygroundVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C3AA162AE6267C00E3986A /* LangPlaygroundVC.m */; };
+		D2CD4D8B2AFCA41E0038F62B /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CD4D8A2AFCA41E0038F62B /* LanguageManager.swift */; };
+		D2CD4D8C2AFCA41E0038F62B /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CD4D8A2AFCA41E0038F62B /* LanguageManager.swift */; };
+		D2CD4D8D2AFCA41E0038F62B /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CD4D8A2AFCA41E0038F62B /* LanguageManager.swift */; };
+		D2CD4DFC2AFCAC220038F62B /* SIMLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2CD4E002AFCAC220038F62B /* SIMLocalizable.strings */; };
+		D2CD4DFD2AFCAC220038F62B /* SIMLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2CD4E002AFCAC220038F62B /* SIMLocalizable.strings */; };
+		D2CD4DFE2AFCAC220038F62B /* SIMLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2CD4E002AFCAC220038F62B /* SIMLocalizable.strings */; };
 		F656FF5E1A308E4E921E070F /* Pods_ObjcProvinggroundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2262BBF496DE758FC838D8D /* Pods_ObjcProvinggroundTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -272,6 +278,14 @@
 		D2C3AA132AE27B0500E3986A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		D2C3AA152AE6267C00E3986A /* LangPlaygroundVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LangPlaygroundVC.h; sourceTree = "<group>"; };
 		D2C3AA162AE6267C00E3986A /* LangPlaygroundVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LangPlaygroundVC.m; sourceTree = "<group>"; };
+		D2CD4D8A2AFCA41E0038F62B /* LanguageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
+		D2CD4DFF2AFCAC220038F62B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SIMLocalizable.strings; sourceTree = "<group>"; };
+		D2CD4E012AFCAC270038F62B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SIMLocalizable.strings"; sourceTree = "<group>"; };
+		D2CD4E022AFCAC2B0038F62B /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/SIMLocalizable.strings"; sourceTree = "<group>"; };
+		D2CD4E032AFCAC2C0038F62B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/SIMLocalizable.strings; sourceTree = "<group>"; };
+		D2CD4E042AFCAC2D0038F62B /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/SIMLocalizable.strings; sourceTree = "<group>"; };
+		D2CD4E052AFCAC2E0038F62B /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/SIMLocalizable.strings; sourceTree = "<group>"; };
+		D2CD4E062AFCAC300038F62B /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/SIMLocalizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -352,6 +366,7 @@
 		D21763DB288901EF004A399E /* ObjcProvingground */ = {
 			isa = PBXGroup;
 			children = (
+				D2CD4D8A2AFCA41E0038F62B /* LanguageManager.swift */,
 				D258B4312AFB62DB00A52469 /* Config */,
 				D258B36E2AFB621100A52469 /* Categories */,
 				D258B36A2AFB5EC200A52469 /* PPGTalk */,
@@ -363,6 +378,7 @@
 				D21763E3288901EF004A399E /* ViewController.m */,
 				D21763E5288901EF004A399E /* Main.storyboard */,
 				D21763EB288901F0004A399E /* Assets.xcassets */,
+				D2CD4E002AFCAC220038F62B /* SIMLocalizable.strings */,
 				D21763ED288901F0004A399E /* LaunchScreen.storyboard */,
 				D21763F0288901F0004A399E /* Info.plist */,
 				D21763F1288901F0004A399E /* main.m */,
@@ -610,6 +626,12 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
+				ja,
+				"zh-Hans",
+				vi,
+				th,
+				"zh-Hant",
 			);
 			mainGroup = D21763D0288901EF004A399E;
 			productRefGroup = D21763DA288901EF004A399E /* Products */;
@@ -629,6 +651,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D21763EF288901F0004A399E /* LaunchScreen.storyboard in Resources */,
+				D2CD4DFC2AFCAC220038F62B /* SIMLocalizable.strings in Resources */,
 				D21763EC288901F0004A399E /* Assets.xcassets in Resources */,
 				D21763E7288901EF004A399E /* Main.storyboard in Resources */,
 			);
@@ -638,6 +661,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2CD4DFD2AFCAC220038F62B /* SIMLocalizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,6 +669,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2CD4DFE2AFCAC220038F62B /* SIMLocalizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -802,6 +827,7 @@
 				D258B4252AFB621100A52469 /* UIImage+SIMKit.m in Sources */,
 				D258B41C2AFB621100A52469 /* UIImage+ImageSize.m in Sources */,
 				D258B4392AFB62DB00A52469 /* SIMCustomDefineSwift.swift in Sources */,
+				D2CD4D8B2AFCA41E0038F62B /* LanguageManager.swift in Sources */,
 				D258B4222AFB621100A52469 /* UIDevice+SIMDevice.m in Sources */,
 				D2C3AA172AE6267C00E3986A /* LangPlaygroundVC.m in Sources */,
 				D258B42B2AFB621100A52469 /* UIView+Radius.m in Sources */,
@@ -867,6 +893,7 @@
 				D258B3DB2AFB621100A52469 /* UITextField+LCreate.m in Sources */,
 				D258B3ED2AFB621100A52469 /* NSString+SIMKit.m in Sources */,
 				D21763FC288901F0004A399E /* ObjcProvinggroundTests.m in Sources */,
+				D2CD4D8C2AFCA41E0038F62B /* LanguageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -903,6 +930,7 @@
 				D258B40C2AFB621100A52469 /* UIImage+SIMResize.m in Sources */,
 				D258B3D62AFB621100A52469 /* UIAlertController+Autorotate.m in Sources */,
 				D258B3D92AFB621100A52469 /* UIScrollView+TZGestureRecognizer.m in Sources */,
+				D2CD4D8D2AFCA41E0038F62B /* LanguageManager.swift in Sources */,
 				D258B3FD2AFB621100A52469 /* NSString+Date.m in Sources */,
 				D258B4182AFB621100A52469 /* UIView+ITTAdditions.m in Sources */,
 				D258B3D32AFB621100A52469 /* UIView+Frame.m in Sources */,
@@ -946,6 +974,20 @@
 				D21763EE288901F0004A399E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D2CD4E002AFCAC220038F62B /* SIMLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2CD4DFF2AFCAC220038F62B /* en */,
+				D2CD4E012AFCAC270038F62B /* zh-Hans */,
+				D2CD4E022AFCAC2B0038F62B /* zh-Hant */,
+				D2CD4E032AFCAC2C0038F62B /* ja */,
+				D2CD4E042AFCAC2D0038F62B /* ko */,
+				D2CD4E052AFCAC2E0038F62B /* th */,
+				D2CD4E062AFCAC300038F62B /* vi */,
+			);
+			name = SIMLocalizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
