@@ -14,7 +14,7 @@
 //about pgtalk
 #define SIMScreenWidth                              [UIScreen mainScreen].bounds.size.width
 #define SIMScreenHeight                             [UIScreen mainScreen].bounds.size.height
-#define SIMLocalized(key)  NSLocalizedString((key), nil)
+#define SIMLocalized(key)  NSLocalizedStringFromTable((key), @"SIMLocalizable", nil)
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.

@@ -3,11 +3,11 @@ import UIKit
 
 public let SIMColorThemeNavigationBar = NSKeyedUnarchiver.unarchiveObject(with: UserDefaults.standard.value(forKey: "UIColorThemeNavigationBar") as! Data)
 
-public func SIMLocalized(_ key: String) -> String {
-    guard let appLanguage = UserDefaults.standard.object(forKey: "appLanguage") as? String else { return key }
-    guard let path = Bundle.main.path(forResource: appLanguage , ofType: "lproj") else { return key }
-    return Bundle(path: path)?.localizedString(forKey: key, value: nil, table: "SIMLocalizable") ?? key
-}
+//public func SIMLocalized(_ key: String) -> String {
+//    guard let appLanguage = UserDefaults.standard.object(forKey: "appLanguage") as? String else { return key }
+//    guard let path = Bundle.main.path(forResource: appLanguage , ofType: "lproj") else { return key }
+//    return Bundle(path: path)?.localizedString(forKey: key, value: nil, table: "SIMLocalizable") ?? key
+//}
  
 public func RGBA(_ r: CGFloat, _ g: CGFloat, _ b: CGFloat, _ a: CGFloat) -> UIColor {
     UIColor(red: r / 255.0, green: g / 255.0, blue: b / 255.0, alpha: a)

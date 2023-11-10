@@ -1168,9 +1168,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 284P2JH7HZ;
+				DEVELOPMENT_TEAM = XPYYPG44HB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ObjcProvingground/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1183,8 +1184,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = yyx.com.objc.provingground.ObjcProvingground;
+				PRODUCT_BUNDLE_IDENTIFIER = yyx.c5om.objc.provingground.ObjcProvingground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "ObjcProvingground-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -1198,9 +1200,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 284P2JH7HZ;
+				DEVELOPMENT_TEAM = XPYYPG44HB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ObjcProvingground/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1213,8 +1216,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = yyx.com.objc.provingground.ObjcProvingground;
+				PRODUCT_BUNDLE_IDENTIFIER = yyx.c5om.objc.provingground.ObjcProvingground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "ObjcProvingground-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

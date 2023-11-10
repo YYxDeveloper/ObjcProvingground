@@ -3899,6 +3899,7 @@ our E-Invoice by email or fill mobile barcode  to save it to your mobile carrier
 "活動贈送的PT點數，僅限於消費抵扣使用，未使用之贈送點數，將無法兌換現金退款。" = "The PT points given by the event can only be used for consumption deduction. Unused gift points will not be exchanged for cash refunds.";
 "select_purchase_pgp_number" = "請選擇購買PGP數量";
 "pgp_balance_number" = "PGP餘額: ";
+
 "enter_purchase_pgp_number" = "請輸入數量";
 
 "刪除帳號" = "Delete Account";
