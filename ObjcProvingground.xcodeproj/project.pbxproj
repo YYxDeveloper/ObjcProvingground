@@ -136,12 +136,26 @@
 		D258B43D2AFB66C000A52469 /* ObjcProvingground-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = D258B43C2AFB658200A52469 /* ObjcProvingground-Bridging-Header.h */; };
 		D27AC72B2AE8FB8A007644ED /* SIMSelectedLanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D27AC72A2AE8FB8A007644ED /* SIMSelectedLanguageViewController.m */; };
 		D2C3AA172AE6267C00E3986A /* LangPlaygroundVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C3AA162AE6267C00E3986A /* LangPlaygroundVC.m */; };
+		D2CD4D772AFB78A90038F62B /* DefaultPGPPurchaseItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CD4D762AFB78A90038F62B /* DefaultPGPPurchaseItemView.m */; };
+		D2CD4D7A2AFB89340038F62B /* SIMBaseCheckoutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CD4D792AFB89340038F62B /* SIMBaseCheckoutTableViewCell.m */; };
+		D2CD4D7B2AFB89340038F62B /* SIMBaseCheckoutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CD4D792AFB89340038F62B /* SIMBaseCheckoutTableViewCell.m */; };
+		D2CD4D7C2AFB89340038F62B /* SIMBaseCheckoutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CD4D792AFB89340038F62B /* SIMBaseCheckoutTableViewCell.m */; };
 		D2CD4D8B2AFCA41E0038F62B /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CD4D8A2AFCA41E0038F62B /* LanguageManager.swift */; };
 		D2CD4D8C2AFCA41E0038F62B /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CD4D8A2AFCA41E0038F62B /* LanguageManager.swift */; };
 		D2CD4D8D2AFCA41E0038F62B /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CD4D8A2AFCA41E0038F62B /* LanguageManager.swift */; };
 		D2CD4DFC2AFCAC220038F62B /* SIMLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2CD4E002AFCAC220038F62B /* SIMLocalizable.strings */; };
 		D2CD4DFD2AFCAC220038F62B /* SIMLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2CD4E002AFCAC220038F62B /* SIMLocalizable.strings */; };
 		D2CD4DFE2AFCAC220038F62B /* SIMLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2CD4E002AFCAC220038F62B /* SIMLocalizable.strings */; };
+		D2CD4E0A2AFCCB090038F62B /* DefaultPGPPurchaseItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CD4E082AFCCB090038F62B /* DefaultPGPPurchaseItemTableViewCell.m */; };
+		D2CD4E0B2AFCCB090038F62B /* DefaultPGPPurchaseItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2CD4E092AFCCB090038F62B /* DefaultPGPPurchaseItemTableViewCell.xib */; };
+		D2CD4E0C2AFCCB0C0038F62B /* DefaultPGPPurchaseItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CD4E082AFCCB090038F62B /* DefaultPGPPurchaseItemTableViewCell.m */; };
+		D2CD4E0D2AFCCB0C0038F62B /* DefaultPGPPurchaseItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CD4E082AFCCB090038F62B /* DefaultPGPPurchaseItemTableViewCell.m */; };
+		D2CD4E112AFCCD800038F62B /* CustomPGPPurchaseItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CD4E0F2AFCCD800038F62B /* CustomPGPPurchaseItemTableViewCell.m */; };
+		D2CD4E122AFCCD800038F62B /* CustomPGPPurchaseItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CD4E0F2AFCCD800038F62B /* CustomPGPPurchaseItemTableViewCell.m */; };
+		D2CD4E132AFCCD800038F62B /* CustomPGPPurchaseItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CD4E0F2AFCCD800038F62B /* CustomPGPPurchaseItemTableViewCell.m */; };
+		D2CD4E142AFCCD800038F62B /* CustomPGPPurchaseItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2CD4E102AFCCD800038F62B /* CustomPGPPurchaseItemTableViewCell.xib */; };
+		D2CD4E152AFCCD800038F62B /* CustomPGPPurchaseItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2CD4E102AFCCD800038F62B /* CustomPGPPurchaseItemTableViewCell.xib */; };
+		D2CD4E162AFCCD800038F62B /* CustomPGPPurchaseItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2CD4E102AFCCD800038F62B /* CustomPGPPurchaseItemTableViewCell.xib */; };
 		F656FF5E1A308E4E921E070F /* Pods_ObjcProvinggroundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2262BBF496DE758FC838D8D /* Pods_ObjcProvinggroundTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -278,6 +292,10 @@
 		D2C3AA132AE27B0500E3986A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		D2C3AA152AE6267C00E3986A /* LangPlaygroundVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LangPlaygroundVC.h; sourceTree = "<group>"; };
 		D2C3AA162AE6267C00E3986A /* LangPlaygroundVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LangPlaygroundVC.m; sourceTree = "<group>"; };
+		D2CD4D752AFB78A90038F62B /* DefaultPGPPurchaseItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultPGPPurchaseItemView.h; sourceTree = "<group>"; };
+		D2CD4D762AFB78A90038F62B /* DefaultPGPPurchaseItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultPGPPurchaseItemView.m; sourceTree = "<group>"; };
+		D2CD4D782AFB89340038F62B /* SIMBaseCheckoutTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMBaseCheckoutTableViewCell.h; sourceTree = "<group>"; };
+		D2CD4D792AFB89340038F62B /* SIMBaseCheckoutTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMBaseCheckoutTableViewCell.m; sourceTree = "<group>"; };
 		D2CD4D8A2AFCA41E0038F62B /* LanguageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 		D2CD4DFF2AFCAC220038F62B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SIMLocalizable.strings; sourceTree = "<group>"; };
 		D2CD4E012AFCAC270038F62B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SIMLocalizable.strings"; sourceTree = "<group>"; };
@@ -286,6 +304,12 @@
 		D2CD4E042AFCAC2D0038F62B /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/SIMLocalizable.strings; sourceTree = "<group>"; };
 		D2CD4E052AFCAC2E0038F62B /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/SIMLocalizable.strings; sourceTree = "<group>"; };
 		D2CD4E062AFCAC300038F62B /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/SIMLocalizable.strings; sourceTree = "<group>"; };
+		D2CD4E072AFCCB090038F62B /* DefaultPGPPurchaseItemTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultPGPPurchaseItemTableViewCell.h; sourceTree = "<group>"; };
+		D2CD4E082AFCCB090038F62B /* DefaultPGPPurchaseItemTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultPGPPurchaseItemTableViewCell.m; sourceTree = "<group>"; };
+		D2CD4E092AFCCB090038F62B /* DefaultPGPPurchaseItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultPGPPurchaseItemTableViewCell.xib; sourceTree = "<group>"; };
+		D2CD4E0E2AFCCD800038F62B /* CustomPGPPurchaseItemTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomPGPPurchaseItemTableViewCell.h; sourceTree = "<group>"; };
+		D2CD4E0F2AFCCD800038F62B /* CustomPGPPurchaseItemTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomPGPPurchaseItemTableViewCell.m; sourceTree = "<group>"; };
+		D2CD4E102AFCCD800038F62B /* CustomPGPPurchaseItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomPGPPurchaseItemTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -367,9 +391,10 @@
 			isa = PBXGroup;
 			children = (
 				D2CD4D8A2AFCA41E0038F62B /* LanguageManager.swift */,
+				D2CD4D842AFCA3780038F62B /* Model */,
 				D258B4312AFB62DB00A52469 /* Config */,
 				D258B36E2AFB621100A52469 /* Categories */,
-				D258B36A2AFB5EC200A52469 /* PPGTalk */,
+				D258B36A2AFB5EC200A52469 /* PGTalk-issues */,
 				D21763DC288901EF004A399E /* AppDelegate.h */,
 				D21763DD288901EF004A399E /* AppDelegate.m */,
 				D21763DF288901EF004A399E /* SceneDelegate.h */,
@@ -410,17 +435,27 @@
 			children = (
 				D258B36B2AFB5FE300A52469 /* YYxTransferBankVC.h */,
 				D258B36C2AFB5FE300A52469 /* YYxTransferBankVC.m */,
+				D2CD4D782AFB89340038F62B /* SIMBaseCheckoutTableViewCell.h */,
+				D2CD4D792AFB89340038F62B /* SIMBaseCheckoutTableViewCell.m */,
+				D2CD4E0E2AFCCD800038F62B /* CustomPGPPurchaseItemTableViewCell.h */,
+				D2CD4E0F2AFCCD800038F62B /* CustomPGPPurchaseItemTableViewCell.m */,
+				D2CD4E102AFCCD800038F62B /* CustomPGPPurchaseItemTableViewCell.xib */,
+				D2CD4E072AFCCB090038F62B /* DefaultPGPPurchaseItemTableViewCell.h */,
+				D2CD4E082AFCCB090038F62B /* DefaultPGPPurchaseItemTableViewCell.m */,
+				D2CD4E092AFCCB090038F62B /* DefaultPGPPurchaseItemTableViewCell.xib */,
+				D2CD4D752AFB78A90038F62B /* DefaultPGPPurchaseItemView.h */,
+				D2CD4D762AFB78A90038F62B /* DefaultPGPPurchaseItemView.m */,
 			);
 			path = 15426;
 			sourceTree = "<group>";
 		};
-		D258B36A2AFB5EC200A52469 /* PPGTalk */ = {
+		D258B36A2AFB5EC200A52469 /* PGTalk-issues */ = {
 			isa = PBXGroup;
 			children = (
 				D258B3692AFB5E9F00A52469 /* 15426 */,
 				D2C3AA142AE6258500E3986A /* 14567 */,
 			);
-			path = PPGTalk;
+			path = "PGTalk-issues";
 			sourceTree = "<group>";
 		};
 		D258B36E2AFB621100A52469 /* Categories */ = {
@@ -533,6 +568,13 @@
 				D2034FB62AF3775B00B4444C /* SIMSwitchLocationContentViewController.m */,
 			);
 			path = 14567;
+			sourceTree = "<group>";
+		};
+		D2CD4D842AFCA3780038F62B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -652,6 +694,8 @@
 			files = (
 				D21763EF288901F0004A399E /* LaunchScreen.storyboard in Resources */,
 				D2CD4DFC2AFCAC220038F62B /* SIMLocalizable.strings in Resources */,
+				D2CD4E142AFCCD800038F62B /* CustomPGPPurchaseItemTableViewCell.xib in Resources */,
+				D2CD4E0B2AFCCB090038F62B /* DefaultPGPPurchaseItemTableViewCell.xib in Resources */,
 				D21763EC288901F0004A399E /* Assets.xcassets in Resources */,
 				D21763E7288901EF004A399E /* Main.storyboard in Resources */,
 			);
@@ -661,6 +705,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2CD4E152AFCCD800038F62B /* CustomPGPPurchaseItemTableViewCell.xib in Resources */,
 				D2CD4DFD2AFCAC220038F62B /* SIMLocalizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -669,6 +714,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2CD4E162AFCCD800038F62B /* CustomPGPPurchaseItemTableViewCell.xib in Resources */,
 				D2CD4DFE2AFCAC220038F62B /* SIMLocalizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -800,6 +846,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2CD4D7A2AFB89340038F62B /* SIMBaseCheckoutTableViewCell.m in Sources */,
 				D258B43D2AFB66C000A52469 /* ObjcProvingground-Bridging-Header.h in Sources */,
 				D258B36D2AFB5FE300A52469 /* YYxTransferBankVC.m in Sources */,
 				D258B4192AFB621100A52469 /* UIColor+FlatUI.m in Sources */,
@@ -822,8 +869,10 @@
 				D258B3C52AFB621100A52469 /* UIImage+FlatUI.m in Sources */,
 				D258B3E62AFB621100A52469 /* UIViewController+Pop.swift in Sources */,
 				D258B3DA2AFB621100A52469 /* UITextField+LCreate.m in Sources */,
+				D2CD4E0A2AFCCB090038F62B /* DefaultPGPPurchaseItemTableViewCell.m in Sources */,
 				D258B3D72AFB621100A52469 /* UIScrollView+TZGestureRecognizer.m in Sources */,
 				D258B4102AFB621100A52469 /* UIButton+SIMUIButton.m in Sources */,
+				D2CD4D772AFB78A90038F62B /* DefaultPGPPurchaseItemView.m in Sources */,
 				D258B4252AFB621100A52469 /* UIImage+SIMKit.m in Sources */,
 				D258B41C2AFB621100A52469 /* UIImage+ImageSize.m in Sources */,
 				D258B4392AFB62DB00A52469 /* SIMCustomDefineSwift.swift in Sources */,
@@ -831,6 +880,7 @@
 				D258B4222AFB621100A52469 /* UIDevice+SIMDevice.m in Sources */,
 				D2C3AA172AE6267C00E3986A /* LangPlaygroundVC.m in Sources */,
 				D258B42B2AFB621100A52469 /* UIView+Radius.m in Sources */,
+				D2CD4E112AFCCD800038F62B /* CustomPGPPurchaseItemTableViewCell.m in Sources */,
 				D258B3BC2AFB621100A52469 /* NSCalendar+ZIKTheDayBeforeYesterDay.m in Sources */,
 				D258B3FB2AFB621100A52469 /* NSString+Date.m in Sources */,
 				D2034FB72AF3775B00B4444C /* SIMSwitchLocationContentViewController.m in Sources */,
@@ -860,10 +910,12 @@
 				D258B3E12AFB621100A52469 /* NSData+SIMKit.m in Sources */,
 				D258B43A2AFB62DB00A52469 /* SIMCustomDefineSwift.swift in Sources */,
 				D258B4172AFB621100A52469 /* UIView+ITTAdditions.m in Sources */,
+				D2CD4E0C2AFCCB0C0038F62B /* DefaultPGPPurchaseItemTableViewCell.m in Sources */,
 				D258B3C02AFB621100A52469 /* UILabel+LCreate.m in Sources */,
 				D258B3D52AFB621100A52469 /* UIAlertController+Autorotate.m in Sources */,
 				D258B4202AFB621100A52469 /* NSDictionary+safeDictionary.m in Sources */,
 				D258B4142AFB621100A52469 /* UIImage+Color.m in Sources */,
+				D2CD4E122AFCCD800038F62B /* CustomPGPPurchaseItemTableViewCell.m in Sources */,
 				D258B3BD2AFB621100A52469 /* NSCalendar+ZIKTheDayBeforeYesterDay.m in Sources */,
 				D258B4292AFB621100A52469 /* NSString+Size.m in Sources */,
 				D258B4262AFB621100A52469 /* UIImage+SIMKit.m in Sources */,
@@ -889,6 +941,7 @@
 				D258B3E72AFB621100A52469 /* UIViewController+Pop.swift in Sources */,
 				D258B3C32AFB621100A52469 /* UIButton+ZIKEnlargeTouchArea.m in Sources */,
 				D258B41A2AFB621100A52469 /* UIColor+FlatUI.m in Sources */,
+				D2CD4D7B2AFB89340038F62B /* SIMBaseCheckoutTableViewCell.m in Sources */,
 				D258B42C2AFB621100A52469 /* UIView+Radius.m in Sources */,
 				D258B3DB2AFB621100A52469 /* UITextField+LCreate.m in Sources */,
 				D258B3ED2AFB621100A52469 /* NSString+SIMKit.m in Sources */,
@@ -906,13 +959,16 @@
 				D258B3DF2AFB621100A52469 /* UIImage+Extension.m in Sources */,
 				D258B3BE2AFB621100A52469 /* NSCalendar+ZIKTheDayBeforeYesterDay.m in Sources */,
 				D258B41E2AFB621100A52469 /* UIImage+ImageSize.m in Sources */,
+				D2CD4E0D2AFCCB0C0038F62B /* DefaultPGPPurchaseItemTableViewCell.m in Sources */,
 				D258B4092AFB621100A52469 /* UIViewController+LNavigationBarHidden.m in Sources */,
+				D2CD4D7C2AFB89340038F62B /* SIMBaseCheckoutTableViewCell.m in Sources */,
 				D258B3DC2AFB621100A52469 /* UITextField+LCreate.m in Sources */,
 				D258B3EE2AFB621100A52469 /* NSString+SIMKit.m in Sources */,
 				D258B4212AFB621100A52469 /* NSDictionary+safeDictionary.m in Sources */,
 				D258B3E22AFB621100A52469 /* NSData+SIMKit.m in Sources */,
 				D258B4002AFB621100A52469 /* UILabelAdditions.m in Sources */,
 				D258B4302AFB621100A52469 /* UITableView+SIMScrollToBottom.m in Sources */,
+				D2CD4E132AFCCD800038F62B /* CustomPGPPurchaseItemTableViewCell.m in Sources */,
 				D258B3C12AFB621100A52469 /* UILabel+LCreate.m in Sources */,
 				D2176406288901F0004A399E /* ObjcProvinggroundUITests.m in Sources */,
 				D258B3E82AFB621100A52469 /* UIViewController+Pop.swift in Sources */,
