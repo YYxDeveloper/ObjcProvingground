@@ -43,10 +43,7 @@
                             <constraint firstAttribute="height" constant="30" id="mT2-OU-gXA"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="string" keyPath="textField.placeholder" value="dadasdad"/>
-                        </userDefinedRuntimeAttributes>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                     </textField>
                 </subviews>
                 <constraints>
@@ -63,8 +60,8 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
+                <outlet property="enterPriceTextField" destination="8kk-c9-8ou" id="0FS-bz-jlp"/>
                 <outlet property="selectIcon" destination="bkw-7S-piQ" id="vZP-PG-U9n"/>
-                <outlet property="textField" destination="8kk-c9-8ou" id="0FS-bz-jlp"/>
             </connections>
             <point key="canvasLocation" x="131" y="-32"/>
         </tableViewCell>

@@ -39,7 +39,7 @@
 - (NSArray<NSString*>*)prices
 {
     if (!_prices) {
-        _prices = @[@"30 PGP",@"120 PGP",@"240 PGP",@"1200 PGP", @"3600 PGP",SIMLocalized(@"enter_purchase_pgp_number")];
+        _prices = @[@"30",@"120",@"240",@"1200", @"3600",SIMLocalized(@"enter_purchase_pgp_number")];
     }
     return _prices;
 }
@@ -53,8 +53,8 @@
         [_purchasePriceTableView registerNib:[UINib nibWithNibName:@"CustomPGPPurchaseItemTableViewCell" bundle:nil] forCellReuseIdentifier:@"CustomPGPPurchaseItemTableViewCell"];
         _purchasePriceTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _purchasePriceTableView.scrollEnabled = NO;
-
-
+        
+        
     }
     return _purchasePriceTableView;
 }
@@ -95,20 +95,20 @@
         make.trailing.equalTo(self).offset(-10);
         make.top.equalTo(self).offset(10);
         make.height.equalTo(@50);
-
-    }];
         
+    }];
+    
 }
 -(void)setTOPCornerRadiusAtViewDidLoad{
     [self setCornerRadius:20 corners:UIRectCornerTopLeft| UIRectCornerTopRight];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-   
-   
+    
+    
     if(indexPath.row != 5){
         DefaultPGPPurchaseItemTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DefaultPGPPurchaseItemTableViewCell" forIndexPath:indexPath];
-        cell.howMuchPGPLabel.text = self.prices[indexPath.row];
+        cell.howMuchPGPLabel.text = [NSString stringWithFormat:@"%@ %@",self.prices[indexPath.row],@"PGP"];
         [self resetCellIndcatorAtIndexPath:indexPath andCell:cell];
         return  cell;
     }else{
@@ -123,14 +123,14 @@
                     }else{
                         CustomPGPPurchaseItemTableViewCell* customCell = (CustomPGPPurchaseItemTableViewCell*)cell;
                         [self resetCellIndcatorAtIndexPath:[self.purchasePriceTableView indexPathForCell:cell] andCell:cell];
-
+                        
                     }
                 }
             }
         };
         return  cell;
     }
-//    cell.model = @{@"title":self.prices[indexPath.row],@"value":[NSString stringWithFormat:@"%lu",(unsigned long)(indexPath.section == self.checkoutIndexPath?CheckoutTypeSelect:CheckoutTypeNone)]};
+    //    cell.model = @{@"title":self.prices[indexPath.row],@"value":[NSString stringWithFormat:@"%lu",(unsigned long)(indexPath.section == self.checkoutIndexPath?CheckoutTypeSelect:CheckoutTypeNone)]};
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.prices.count;
@@ -142,19 +142,28 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    NSInteger oldIndex = self.checkoutIndexPath;
-//    if (indexPath.section == self.checkoutIndexPath) {
-//        return;
-//    }else{
-//        self.checkoutIndexPath = indexPath.section;
-//    }
+    //    NSInteger oldIndex = self.checkoutIndexPath;
+    //    if (indexPath.section == self.checkoutIndexPath) {
+    //        return;
+    //    }else{
+    //        self.checkoutIndexPath = indexPath.section;
+    //    }
+    
+    
+    
+    
+    
     self.checkoutIndexPath = [NSNumber numberWithFloat:indexPath.row];
+    
     [self.purchasePriceTableView reloadData];
-
+    NSIndexPath*PurchaseItemCellIndexPath = [NSIndexPath indexPathForRow:5 inSection:0];
+    CustomPGPPurchaseItemTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CustomPGPPurchaseItemTableViewCell" forIndexPath:PurchaseItemCellIndexPath];
+    
+    cell.enterPriceTextField.text = indexPath.row == 5 ? @"" : [NSString stringWithFormat:@"%@ %@",self.prices[indexPath.row],@"PGP"];
 }
 -(void)resetCellIndcatorAtIndexPath:(NSIndexPath *)indexPath andCell:(UITableViewCell*)cell{
     if(!self.checkoutIndexPath){return;};
-
+    
     if ([cell class] == [CustomPGPPurchaseItemTableViewCell class]) {
         CustomPGPPurchaseItemTableViewCell* theCell = (CustomPGPPurchaseItemTableViewCell*)cell;
         theCell.selectIcon.image = [UIImage imageNamed:indexPath.row == [self.checkoutIndexPath integerValue] ?@"complaints_selected":@"complaints_unselected"];
@@ -162,5 +171,10 @@
         DefaultPGPPurchaseItemTableViewCell* theCell = (DefaultPGPPurchaseItemTableViewCell*)cell;
         theCell.selectIcon.image = [UIImage imageNamed:indexPath.row == [self.checkoutIndexPath integerValue]?@"complaints_selected":@"complaints_unselected"];
     }
+}
+-(void)tapNextWhereIsPGTalk{
+    
+//    BOOL isGreater10PGP = [cell checkEnterPriceGreater10PGP:cell.enterPriceTextField.text];
+//    BOOL isTextLess8 = [cell checkEnterPriceCountLess8Length:cell.enterPriceTextField.text];
 }
 @end
