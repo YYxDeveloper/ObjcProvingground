@@ -3900,7 +3900,7 @@ our E-Invoice by email or fill mobile barcode  to save it to your mobile carrier
 "select_purchase_pgp_number" = "請選擇購買PGP數量";
 "pgp_balance_number" = "PGP餘額: ";
 
-"enter_purchase_pgp_number" = "請輸入數量";
+"enter_purchase_pgp_number" = "請輸入數量PGP";
 
 "刪除帳號" = "Delete Account";
 "刪除所有數據及資料" = "Delete all data and information";
