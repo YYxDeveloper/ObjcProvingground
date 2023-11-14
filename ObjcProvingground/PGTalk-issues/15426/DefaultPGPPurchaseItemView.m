@@ -9,6 +9,8 @@
 #import "ObjcProvingground-Swift.h"
 #import "DefaultPGPPurchaseItemTableViewCell.h"
 #import "CustomPGPPurchaseItemTableViewCell.h"
+#import "MBProgressHUD.h"
+
 @interface DefaultPGPPurchaseItemView()<UITableViewDelegate,UITableViewDataSource>
 @property (strong, nonatomic) UILabel *topicLabel;
 @property (strong, nonatomic) UILabel* pgpBalanceLabel;

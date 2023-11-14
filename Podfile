@@ -8,6 +8,8 @@ target 'ObjcProvingground' do
   # Pods for ObjcProvingground
 	pod 'Masonry'
   pod 'YYKit'
+  pod 'MBProgressHUD'
+
   
   target 'ObjcProvinggroundTests' do
     inherit! :search_paths
@@ -19,6 +21,8 @@ target 'ObjcProvingground' do
   target 'ObjcProvinggroundUITests' do
     pod 'Masonry'
     pod 'YYKit'
+    pod 'MBProgressHUD'
+
     # Pods for testing
   end
 
